@@ -8,9 +8,16 @@ import Error from './components/Error'
 import Results from './pages/Results'
 import Freelances from './pages/Freelances'
 
+const GlobalStyle = createGlobalStyle`
+    div {
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    }
+`
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+    <GlobalStyle />
       <Header />
       <Switch>
         <Route exact path="/">
